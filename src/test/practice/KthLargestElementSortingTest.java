@@ -5,6 +5,6 @@ public class KthLargestElementSortingTest extends KthLargestElementTest {
 
   @Override
   protected int findKthLargest(int[] numbers, int k) {
-    return KthLargestElement.findKthLargestSorting(numbers, k);
+    return KthLargestElementSorting.findKthLargest(numbers, k);
   }
 }
