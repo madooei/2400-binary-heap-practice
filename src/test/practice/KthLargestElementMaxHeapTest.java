@@ -5,6 +5,6 @@ public class KthLargestElementMaxHeapTest extends KthLargestElementTest {
 
   @Override
   protected int findKthLargest(int[] numbers, int k) {
-    return KthLargestElement.findKthLargestMaxHeap(numbers, k);
+    return KthLargestElementMaxHeap.findKthLargest(numbers, k);
   }
 }

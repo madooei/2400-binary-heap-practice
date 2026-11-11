@@ -18,7 +18,9 @@ code/
   src/
     main/
       practice/
-        KthLargestElement.java              # three solutions to the kth largest element
+        KthLargestElementSorting.java       # sort the array
+        KthLargestElementMaxHeap.java       # remove from a max-heap k - 1 times
+        KthLargestElementKeepK.java         # keep only the k largest in a min-heap
         MedianFinder.java                   # the median-of-a-stream contract
         SortedListMedianFinder.java         # keeps every value in a sorted list
         TwoHeapsMedianFinder.java           # splits the values between two heaps
@@ -50,7 +52,9 @@ There is no demo program for these problems; the tests are how you check your wo
 
 ## What's here
 
-- `practice.KthLargestElement` — three ways to find the kth largest element of an array: `findKthLargestSorting` sorts the array, `findKthLargestMaxHeap` removes from a max-heap k − 1 times, and `findKthLargest` keeps only the k largest in a min-heap.
+- `practice.KthLargestElementSorting` — `findKthLargest`, which sorts the array.
+- `practice.KthLargestElementMaxHeap` — `findKthLargest`, which removes from a max-heap k − 1 times.
+- `practice.KthLargestElementKeepK` — `findKthLargest`, which keeps only the k largest in a min-heap.
 - `practice.MedianFinder` — the interface for the median-of-a-stream problem: `add` a value, and read the `median` of every value so far.
 - `practice.SortedListMedianFinder` and `practice.TwoHeapsMedianFinder` — the two solutions. The first keeps every value in a sorted list. The second keeps the smaller half in a max-heap and the larger half in a min-heap.
 - `priorityqueue.PriorityQueue<T>` and `priorityqueue.ArrayHeap<T>` — the PriorityQueue ADT and the array binary heap from the chapter, copied so this code compiles and runs on its own.
