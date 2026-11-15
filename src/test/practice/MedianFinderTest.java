@@ -103,6 +103,14 @@ public abstract class MedianFinderTest {
   }
 
   @Test
+  public void duplicateOfTheLowerMiddleCountsSeparately() {
+    finder.add(2);
+    finder.add(5);
+    finder.add(2);
+    assertEquals(2.0, finder.median(), TOLERANCE);
+  }
+
+  @Test
   public void medianOfNegativeValuesIsNegative() {
     finder.add(-4);
     finder.add(-1);
