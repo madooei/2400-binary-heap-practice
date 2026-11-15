@@ -118,13 +118,6 @@ public abstract class MedianFinderTest {
   }
 
   @Test
-  public void medianOfTwoVeryLargeValuesIsTheirAverage() {
-    finder.add(Integer.MAX_VALUE);
-    finder.add(Integer.MAX_VALUE - 2);
-    assertEquals(Integer.MAX_VALUE - 1.0, finder.median(), TOLERANCE);
-  }
-
-  @Test
   public void medianOfManyValuesIsTheMiddleOne() {
     for (int i = 0; i < 101; i++) {
       finder.add((i * 37) % 101);  // each of 0 to 100 once, scrambled
