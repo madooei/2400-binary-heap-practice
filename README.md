@@ -59,4 +59,4 @@ There is no demo program for these problems; the tests are how you check your wo
 - `practice.SortedListMedianFinder` and `practice.TwoHeapsMedianFinder` — the two solutions. The first keeps every value in a sorted list. The second keeps the smaller half in a max-heap and the larger half in a min-heap.
 - `priorityqueue.PriorityQueue<T>` and `priorityqueue.ArrayHeap<T>` — the PriorityQueue ADT and the array binary heap from the chapter, copied so this code compiles and runs on its own.
 - `list.List<T>` and `list.ArrayList<T>` — the List ADT and its array-backed implementation, copied so this code compiles and runs on its own. `SortedListMedianFinder` keeps its values in a list.
-- The test classes — each abstract base holds the scenarios once, and each subclass runs them against one solution.
+- The test classes — each abstract base holds the scenarios once, and each subclass runs them against one solution. Each kth-largest subclass also checks what its solution does to the caller's array: the sorting solution sorts it, and the two heap solutions leave it unchanged.
