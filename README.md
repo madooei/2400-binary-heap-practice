@@ -56,7 +56,7 @@ code/
 - `scripts/test.sh practice.TwoHeapsMedianFinderTest` — compiles everything and runs only that test class. Use this while you are working on one solution and the others are still empty.
 - `scripts/run.sh demo.TwoHeapsMedianFinderDemo` — compiles everything and runs that one demo. Every solution class has its own demo, `<Class>Demo`.
 
-## What's here
+## Contents
 
 - `practice.KthLargestElementSorting` — `findKthLargest`, which sorts the array.
 - `practice.KthLargestElementMaxHeap` — `findKthLargest`, which removes from a max-heap k − 1 times.
