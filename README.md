@@ -30,6 +30,12 @@ code/
       list/
         List.java                           # the List ADT
         ArrayList.java                      # an array-backed List
+      demo/                                 # one demo per solution class
+        KthLargestElementSortingDemo.java
+        KthLargestElementMaxHeapDemo.java
+        KthLargestElementKeepKDemo.java
+        SortedListMedianFinderDemo.java
+        TwoHeapsMedianFinderDemo.java
     test/
       practice/
         KthLargestElementTest.java          # the kth-largest scenarios (abstract)
@@ -41,14 +47,14 @@ code/
         TwoHeapsMedianFinderTest.java       # runs it against TwoHeapsMedianFinder
   scripts/
     test.sh                                 # compile and run the JUnit tests
+    run.sh                                  # compile and run one demo
 ```
 
 ## How to compile and run
 
 - `scripts/test.sh` — compiles everything and runs the full JUnit suite.
 - `scripts/test.sh practice.TwoHeapsMedianFinderTest` — compiles everything and runs only that test class. Use this while you are working on one solution and the others are still empty.
-
-There is no demo program for these problems; the tests are how you check your work.
+- `scripts/run.sh demo.TwoHeapsMedianFinderDemo` — compiles everything and runs that one demo. Every solution class has its own demo, `<Class>Demo`.
 
 ## What's here
 
@@ -60,3 +66,4 @@ There is no demo program for these problems; the tests are how you check your wo
 - `priorityqueue.PriorityQueue<T>` and `priorityqueue.ArrayHeap<T>` — the PriorityQueue ADT and the array binary heap from the chapter, copied so this code compiles and runs on its own.
 - `list.List<T>` and `list.ArrayList<T>` — the List ADT and its array-backed implementation, copied so this code compiles and runs on its own. `SortedListMedianFinder` keeps its values in a list.
 - The test classes — each abstract base holds the scenarios once, and each subclass runs them against one solution. Each kth-largest subclass also checks what its solution does to the caller's array: the sorting solution sorts it, and the two heap solutions leave it unchanged.
+- `demo.KthLargestElementSortingDemo`, `demo.KthLargestElementMaxHeapDemo`, `demo.KthLargestElementKeepKDemo`, `demo.SortedListMedianFinderDemo`, and `demo.TwoHeapsMedianFinderDemo` — one demo per solution class, each on an example from the notes.
